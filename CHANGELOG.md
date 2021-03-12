@@ -3,6 +3,8 @@
 ENHANCEMENTS:
 
 * dependencies: updating to `v52.4.0` of `github.com/Azure/azure-sdk-for-go` [GH-10982]
+* `azurerm_application_gateway.rewrite_rule` add support for URL rewriting with `url_configuration` block ([#10950](https://github.com/terraform-providers/terraform-provider-azurerm/pull/10950))
+
 
 BUG FIXES:
 
