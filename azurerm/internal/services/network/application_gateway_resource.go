@@ -2981,9 +2981,13 @@ func expandApplicationGatewayRewriteRuleSets(d *schema.ResourceData) (*[]network
 				}
 				if c["path"] != nil {
 					urlConfiguration.ModifiedPath = utils.String(c["path"].(string))
+				} else {
+					urlConfiguration.ModifiedPath = nil
 				}
 				if c["query_string"] != nil {
 					urlConfiguration.ModifiedQueryString = utils.String(c["query_string"].(string))
+				} else {
+					urlConfiguration.ModifiedQueryString = nil
 				}
 				if c["reroute"] != nil {
 					urlConfiguration.Reroute = utils.Bool(c["reroute"].(bool))
